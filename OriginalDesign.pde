@@ -87,6 +87,7 @@ void carwindow()
 	quad(700, 0, 630, 0, 670, 700, 700, 700);
 	rect(0, 0, 700, 50);
 	rect(0, 550, 700, 50);
+	rect(350, 0, 10, 700);
 }
 //create windows
 //create second set of mountains in the back 
