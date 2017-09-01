@@ -17,12 +17,16 @@ void draw()
   mountains();
   
   fill(#FFEA00);
-  ellipse(500, 200, 100, 100);
+  ellipse(600, 100, 100, 100);
   
   cloud1(150);
-  cloud2(320);
+  cloud2(290);
 
   carwindow();
+
+  textSize(40);
+  fill(255);
+  text("LOOK OUT THE CAR WINDOW!", 57, 550);
   
   c_x = c_x + 1;
   c2_x = c2_x + 1;
@@ -35,7 +39,7 @@ void draw()
   
   if (c2_x > 710) 
   {
-    c2_x = -30;
+    c2_x = -90;
   }
   
   if (mx > 740) 
@@ -71,25 +75,21 @@ void grassygrass()
 {
 	fill(#26A551);
 	noStroke();
-	rect(0, 500, 700, 100); 
+	rect(0, 400, 700, 100); 
 }
 
 void mountains()
 {
-	triangle(mx+0, 500, mx+100, 350, mx+200, 500);
-	triangle(mx+150, 500, mx+250, 400, mx+300, 500);
+	triangle(mx+0, 400, mx+100, 250, mx+200, 400);
+	triangle(mx+150, 400, mx+250, 300, mx+300, 400);
 }
 
 void carwindow() 
 {
 	fill(#2c3436);
-	quad(0,0, 70, 0, 40,600, 0, 600);
+	quad(0,0, 70, 0, 40, 600, 0, 600);
 	quad(700, 0, 630, 0, 670, 700, 700, 700);
 	rect(0, 0, 700, 50);
-	rect(0, 550, 700, 50);
-	rect(350, 0, 10, 700);
+	rect(0, 450, 700, 300);
+	rect(330, 0, 50, 700);
 }
-//create windows
-//create second set of mountains in the back 
-//text: "Look out the car window!" 
-
